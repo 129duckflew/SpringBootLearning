@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot.iml" filepath="$PROJECT_DIR$/SpringBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootLearning/SpringBootLearning.iml" filepath="$PROJECT_DIR$/SpringBootLearning/SpringBootLearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebSocketLearning/WebSocketLearning.iml" filepath="$PROJECT_DIR$/WebSocketLearning/WebSocketLearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/amqp-learning/amqp-learning.iml" filepath="$PROJECT_DIR$/amqp-learning/amqp-learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mail-learning/mail-learning.iml" filepath="$PROJECT_DIR$/mail-learning/mail-learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDataJpa/springdatajpa.iml" filepath="$PROJECT_DIR$/SpringDataJpa/springdatajpa.iml" />
+    </modules>
+  </component>
+</project>

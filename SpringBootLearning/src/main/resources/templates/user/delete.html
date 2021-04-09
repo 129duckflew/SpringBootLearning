@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户删除</title>
+    <form th:action="@{'/delete/'+${user.id}}" method="post">
+        <input type="submit"   value="确定删除">
+    </form>
+</head>
+<body>
+</body>
+</html>
