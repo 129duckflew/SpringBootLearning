@@ -1,9 +1,5 @@
-package com.msgf.hr.pojo.emp;
+package cn.duckflew.springsecuritylearning.pojo;
 
-import com.msgf.hr.pojo.Appraise;
-import com.msgf.hr.pojo.Company;
-import com.msgf.hr.pojo.Evaluation;
-import com.msgf.hr.pojo.salary.Salary;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -45,17 +41,4 @@ public class Employee
   private java.sql.Date notWorkDate;  //离职日期
   private Integer workAge;   //工龄
   private Integer salaryId;  //薪资账套ID
-
-  @OneToMany(mappedBy = "employee")
-  private List<Appraise> appraises;
-
-  @ManyToOne
-  @JoinColumn(name = "salaryId",insertable = false,updatable = false,referencedColumnName = "id")
-  private Salary salary;
-  @ManyToOne
-  @JoinColumn(name = "companyId",insertable = false,updatable = false,referencedColumnName = "id")
-  private Company company;
-
-  @OneToMany(mappedBy = "employee")
-  private List<Evaluation> evaluations;
 }

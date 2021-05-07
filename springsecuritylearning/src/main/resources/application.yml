@@ -1,6 +1,9 @@
+server:
+  servlet:
+    session:
+      timeout: 10
 spring:
   datasource:
-    data-username:
     url: jdbc:mysql://duckflew.cn:3306/securitylearning?serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
@@ -10,12 +13,6 @@ spring:
       ddl-auto: update
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL5Dialect
-  thymeleaf:
-    suffix: .html
-    prefix: classpath:/template/
-    cache: false
-    mode: HTML5
-    encoding: utf-8
 
 #jwt的配置信息
 ##jwt配置

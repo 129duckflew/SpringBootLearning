@@ -1,10 +1,10 @@
 package cn.duckflew.springsecuritylearning.repository;
 
 
-import cn.duckflew.springsecuritylearning.pojo.MyUser;
+import cn.duckflew.springsecuritylearning.pojo.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface MyUserRepository extends JpaRepository<MyUser,Integer>
+public interface UserRepository extends JpaRepository<User,Integer>
 {
-    MyUser findByUsername(String username);
+    User findByUsername(String username);
 }

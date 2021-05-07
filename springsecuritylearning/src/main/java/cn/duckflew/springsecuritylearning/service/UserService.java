@@ -1,13 +1,9 @@
 package cn.duckflew.springsecuritylearning.service;
 
-import cn.duckflew.springsecuritylearning.pojo.MyUser;
+import cn.duckflew.springsecuritylearning.pojo.User;
 import cn.duckflew.springsecuritylearning.repository.UserRepository;
-import com.msgf.hr.dao.AdminRepository;
-import com.msgf.hr.pojo.Role;
-import com.msgf.hr.pojo.admin.Admin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -26,24 +22,24 @@ import java.util.List;
  * @since 2021-03-24
  */
 @Service
-public class AdminServiceImpl implements UserDetailsService
+public class UserService implements UserDetailsService
 {
 
     @Autowired
     UserRepository userRepository;
     @Autowired
     PasswordEncoder passwordEncoder;
-    public boolean selectAdminByUsername(String username)
+    public boolean selectuserByUsername(String username)
     {
         return userRepository.findByUsername(username)==null;
     }
 
-    public int addNewAdmin(MyUser myUser)
+    public int addNewuser(User User)
     {
         try
         {
-            myUser.setPassword(passwordEncoder.encode(myUser.getPassword()));
-            userRepository.save(myUser);
+            User.setPassword(passwordEncoder.encode(User.getPassword()));
+            userRepository.save(User);
         }
         catch (Exception e)
         {
@@ -55,9 +51,9 @@ public class AdminServiceImpl implements UserDetailsService
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException
     {
-        MyUser user=userRepository.findByUsername(username);
-        if (admin==null)throw new UsernameNotFoundException(username);
+        User user=userRepository.findByUsername(username);
+        if (user==null)throw new UsernameNotFoundException(username);
         List<GrantedAuthority> authorities=new ArrayList<>();
-        return admin;
+        return user;
     }
 }

@@ -1,6 +1,11 @@
-package cn.duckflew.springsecuritylearning.pojo;
+package cn.duckflew.springsecuritylearning.controller;
 
+import cn.duckflew.springsecuritylearning.pojo.Employee;
+import cn.duckflew.springsecuritylearning.pojo.RespBean;
+import cn.duckflew.springsecuritylearning.service.EmployeeServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -8,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class EmployeeBasicController
 {
     @Autowired
-    EmployeeServiceImpl employeeService;
+     EmployeeServiceImpl employeeService;
 
     @RequestMapping("/hello")
     public String hello()

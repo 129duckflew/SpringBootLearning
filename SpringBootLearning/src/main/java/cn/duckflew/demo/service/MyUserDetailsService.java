@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service("userDetailsService")
+@Service
 public class MyUserDetailsService implements UserDetailsService
 {
 

@@ -1,10 +1,6 @@
-package com.msgf.hr.pojo.admin;
+package cn.duckflew.springsecuritylearning.pojo;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.msgf.hr.pojo.Company;
-import com.msgf.hr.pojo.Evaluation;
-import com.msgf.hr.pojo.Role;
-import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -70,13 +66,6 @@ public class User implements Serializable, UserDetails
     @Transient
     private List<GrantedAuthority> authorities;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "companyId", referencedColumnName = "id")
-    private Company company;
-
-    @OneToMany(mappedBy = "admin",fetch = FetchType.EAGER)
-    List<Evaluation> evaluations;
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities()
     {
@@ -110,9 +99,9 @@ public class User implements Serializable, UserDetails
     public boolean equals(Object obj) {
         //会话并发生效，使用username判断是否是同一个用户
 
-        if (obj instanceof Admin){
+        if (obj instanceof User){
             //字符串的equals方法是已经重写过的
-            return ((Admin) obj).getUsername().equals(this.username);
+            return ((User) obj).getUsername().equals(this.username);
         }else {
             return false;
         }
