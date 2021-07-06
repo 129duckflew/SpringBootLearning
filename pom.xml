@@ -21,6 +21,8 @@
         <module>amqp-learning</module>
         <module>springsecuritylearning</module>
         <module>jwtLearning</module>
+        <module>springboot-mybatis</module>
+        <module>shiro-learning</module>
     </modules>
 
     <dependencies>

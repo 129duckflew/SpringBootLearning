@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    username: root
+    password: znzedushangzhe
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://duckflew.cn:3306/hr?serverTimezone=Asia/Shanghai
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
