@@ -16,11 +16,11 @@
         <java.version>1.8</java.version>
     </properties>
     <modules>
-        <module>SpringDataJpa</module>
-        <module>SpringBootLearning</module>
+        <module>spring-data-jpa-learning</module>
+        <module>springboot-learning</module>
         <module>amqp-learning</module>
-        <module>springsecuritylearning</module>
-        <module>jwtLearning</module>
+        <module>springsecurity-learning</module>
+        <module>jwt-learning</module>
         <module>springboot-mybatis</module>
         <module>shiro-learning</module>
     </modules>
