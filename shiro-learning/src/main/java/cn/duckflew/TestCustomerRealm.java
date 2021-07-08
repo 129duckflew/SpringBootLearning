@@ -8,6 +8,8 @@ import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.mgt.DefaultSecurityManager;
 import org.apache.shiro.subject.Subject;
 
+import java.util.Arrays;
+
 
 public class TestCustomerRealm
 {
@@ -19,7 +21,13 @@ public class TestCustomerRealm
         Subject subject = SecurityUtils.getSubject();
         try
         {
-            subject.login(new UsernamePasswordToken("xiaochen","122342323"));
+            subject.login(new UsernamePasswordToken("xiaochen","123"));
+            System.out.println(subject.isAuthenticated()?"已认证":"未认证");
+
+            System.out.println(subject.hasRole("admin"));
+            System.out.println(Arrays.toString(subject.hasRoles(Arrays.asList("admin", "superAdmin"))));
+            System.out.println(subject.hasAllRoles(Arrays.asList("admin","superAdmin")));
+            System.out.println("用户模块权限"+subject.isPermitted("user:*:01"));
         }
         catch (UnknownAccountException e)
         {
