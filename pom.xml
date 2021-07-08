@@ -44,7 +44,7 @@
         <module>jwt-learning</module>
         <module>springboot-mybatis</module>
         <module>shiro-learning</module>
-        <module>shiro-spring-boot-learning</module>
+        <module>shiro-springboot-learning</module>
     </modules>
     <dependencyManagement>
         <dependencies>
