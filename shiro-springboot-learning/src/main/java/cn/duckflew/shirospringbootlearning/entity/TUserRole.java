@@ -29,6 +29,4 @@ public class TUserRole implements Serializable {
     private Integer roleId;
 
     private Integer userId;
-
-
 }

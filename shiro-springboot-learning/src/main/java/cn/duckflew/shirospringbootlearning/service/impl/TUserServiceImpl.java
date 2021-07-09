@@ -1,5 +1,6 @@
 package cn.duckflew.shirospringbootlearning.service.impl;
 
+import cn.duckflew.shirospringbootlearning.entity.TRole;
 import cn.duckflew.shirospringbootlearning.entity.TUser;
 import cn.duckflew.shirospringbootlearning.mapper.TUserMapper;
 import cn.duckflew.shirospringbootlearning.service.TUserService;
@@ -44,8 +45,8 @@ public class TUserServiceImpl extends ServiceImpl<TUserMapper, TUser> implements
     }
 
     @Override
-    public List<Role> getUserRoles(int id)
+    public List<TRole> getUserRoles(String  username)
     {
-        return tUserMapper.selectRolesByUserId(id);
+        return tUserMapper.selectRolesByUserId(username);
     }
 }

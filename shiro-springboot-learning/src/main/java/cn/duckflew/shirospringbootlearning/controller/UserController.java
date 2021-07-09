@@ -1,5 +1,6 @@
 package cn.duckflew.shirospringbootlearning.controller;
 
+import cn.duckflew.shirospringbootlearning.entity.TRole;
 import cn.duckflew.shirospringbootlearning.entity.TUser;
 import cn.duckflew.shirospringbootlearning.service.TUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,9 +27,9 @@ public class UserController
     {
        return tUserService.findById(id);
     }
-    @GetMapping("/roles/{id}")
-    public List<Role> getUserRoles(@PathVariable int id)
+    @GetMapping("/roles/{username}")
+    public List<TRole> getUserRoles(@PathVariable String username)
     {
-        return tUserService.getUserRoles(id);
+        return tUserService.getUserRoles(username);
     }
 }

@@ -1,5 +1,6 @@
 package cn.duckflew.shirospringbootlearning.mapper;
 
+import cn.duckflew.shirospringbootlearning.entity.TRole;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -19,8 +20,8 @@ class TUserMapperTest
     @Test
     void selectRolesByUsername()
     {
-        List<Role> roles = tUserMapper.selectRolesByUserId(1);
-        for (Role role : roles)
+        List<TRole> roles = tUserMapper.selectRolesByUserId("xiaochen");
+        for (TRole role : roles)
         {
             System.out.println(role);
         }

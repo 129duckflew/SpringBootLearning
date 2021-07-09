@@ -1,5 +1,6 @@
 package cn.duckflew.shirospringbootlearning.service;
 
+import cn.duckflew.shirospringbootlearning.entity.TRole;
 import cn.duckflew.shirospringbootlearning.entity.TUser;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -20,5 +21,5 @@ public interface TUserService extends IService<TUser> {
 
     String register(TUser tUser);
 
-    List<Role> getUserRoles(int id);
+    List<TRole> getUserRoles(String username);
 }

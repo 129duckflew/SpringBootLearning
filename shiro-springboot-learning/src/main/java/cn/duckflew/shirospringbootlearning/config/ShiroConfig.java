@@ -29,7 +29,7 @@ public class ShiroConfig
         //页面保护相关信息
         Map<String,String> map=new HashMap<>();
         map.put("/hello","authc");
-        map.put("/user/*","anon");
+        map.put("/user/*","roles[user]");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(map);
 
         return shiroFilterFactoryBean ;

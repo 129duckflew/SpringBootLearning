@@ -12,7 +12,11 @@
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.servlet.api.version>2.5</java.servlet.api.version>
+        <jedis.version>3.3.0</jedis.version>
+        <spring.fox.swagger2.version>2.9.2</spring.fox.swagger2.version>
         <mybatis-plus-boot-starter-version>3.3.0</mybatis-plus-boot-starter-version>
         <java.version>1.8</java.version>
         <jjwt.version>0.9.0</jjwt.version>
@@ -35,6 +39,7 @@
         <webjars.dateTimepicker.version>4.17.47</webjars.dateTimepicker.version>
         <metrics-core.version>3.0.1</metrics-core.version>
         <druid.version>1.1.10</druid.version>
+        <auth0.version>3.15.0</auth0.version>
     </properties>
     <modules>
         <module>spring-data-jpa-learning</module>
@@ -45,9 +50,16 @@
         <module>springboot-mybatis</module>
         <module>shiro-learning</module>
         <module>shiro-springboot-learning</module>
+        <module>jwt-springboot-demo</module>
+        <module>springboot-springsecurity-jwt-demo</module>
     </modules>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.auth0</groupId>
+                <artifactId>java-jwt</artifactId>
+                <version>${auth0.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
@@ -111,6 +123,17 @@
                 <version>${mysql-connector-java-version}</version>
             </dependency>
             <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit-version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-generator</artifactId>
                 <version>${mybatis-plus-boot-starter-version}</version>
@@ -144,6 +167,16 @@
                 <groupId>javax.servlet</groupId>
                 <artifactId>servlet-api</artifactId>
                 <version>${java.servlet.api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${spring.fox.swagger2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${spring.fox.swagger2.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
