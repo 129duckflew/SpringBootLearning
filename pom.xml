@@ -16,6 +16,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.servlet.api.version>2.5</java.servlet.api.version>
         <jedis.version>3.3.0</jedis.version>
+        <redis.boot.starter.version>2.4.3</redis.boot.starter.version>
         <spring.fox.swagger2.version>2.9.2</spring.fox.swagger2.version>
         <mybatis-plus-boot-starter-version>3.3.0</mybatis-plus-boot-starter-version>
         <java.version>1.8</java.version>
@@ -26,7 +27,6 @@
         <lombok.version>1.18.20</lombok.version>
         <jackson-core-asl-version>1.9.12</jackson-core-asl-version>
         <mysql-connector-java-version>8.0.25</mysql-connector-java-version>
-        <opensymphony-version>2.4.2</opensymphony-version>
         <aspectjweaver-version>1.6.6</aspectjweaver-version>
         <log4j-version>1.2.16</log4j-version>
         <cglib-version>2.2.2</cglib-version>
@@ -40,6 +40,8 @@
         <metrics-core.version>3.0.1</metrics-core.version>
         <druid.version>1.1.10</druid.version>
         <auth0.version>3.15.0</auth0.version>
+        <jeecg.version>1.0.2</jeecg.version>
+        <commons.pool2.version>2.9.0</commons.pool2.version>
     </properties>
     <modules>
         <module>spring-data-jpa-learning</module>
@@ -71,6 +73,16 @@
                 <version>${shiro-boot-starter.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-ehcache</artifactId>
+                <version>${shiro-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${redis.boot.starter.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
@@ -96,12 +108,24 @@
                 <artifactId>jjwt</artifactId>
                 <version>${jjwt.version}</version>
             </dependency>
+<!--            主要使用其中的applicationcontextutil工具类-->
+            <dependency>
+                <groupId>org.jeecgframework</groupId>
+                <artifactId>autopoi</artifactId>
+                <version>${jeecg.version}</version>
+            </dependency>
+            <!-- Thanks for using https://jar-download.com -->
             <dependency>
                 <groupId>org.apache.shiro</groupId>
                 <artifactId>shiro-core</artifactId>
                 <version>${shiro-boot-starter.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>${commons.pool2.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
