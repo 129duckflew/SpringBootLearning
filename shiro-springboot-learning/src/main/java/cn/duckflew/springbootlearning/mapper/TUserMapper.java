@@ -30,4 +30,6 @@ public interface TUserMapper extends BaseMapper<TUser> {
 //    )
     @Select("SELECT r.id,r.name FROM t_user u LEFT JOIN t_user_role ur ON u.id = ur.`user_id` LEFT JOIN t_role r ON r.`id` = ur.`role_id` where u.username=#{username} ")
     List<TRole> selectRolesByUsername(String  username);
+
+
 }

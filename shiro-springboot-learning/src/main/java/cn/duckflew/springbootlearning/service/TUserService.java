@@ -4,6 +4,7 @@ import cn.duckflew.springbootlearning.entity.TRole;
 import cn.duckflew.springbootlearning.entity.TUser;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -16,9 +17,8 @@ import java.util.List;
  */
 public interface TUserService extends IService<TUser> {
 
-    TUser findById(int id);
 
     String register(TUser tUser);
 
-    List<TRole> getUserRoles();
+    List<TRole> getUserRolesByUsername(String username);
 }

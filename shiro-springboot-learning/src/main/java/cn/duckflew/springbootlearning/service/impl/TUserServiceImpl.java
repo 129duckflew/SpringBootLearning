@@ -5,6 +5,7 @@ import cn.duckflew.springbootlearning.entity.TUser;
 import cn.duckflew.springbootlearning.mapper.TUserMapper;
 import cn.duckflew.springbootlearning.service.TUserService;
 import cn.duckflew.springbootlearning.util.SaltUtil;
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.crypto.hash.Md5Hash;
@@ -27,13 +28,10 @@ import java.util.List;
 public class TUserServiceImpl extends ServiceImpl<TUserMapper, TUser> implements TUserService
 {
 
+
+
     @Autowired
     TUserMapper tUserMapper;
-    @Override
-    public TUser findById(int id)
-    {
-        return tUserMapper.selectById(id);
-    }
 
     @Override
     public String register(TUser tUser)
@@ -47,15 +45,8 @@ public class TUserServiceImpl extends ServiceImpl<TUserMapper, TUser> implements
     }
 
     @Override
-    public List<TRole> getUserRoles()
+    public List<TRole> getUserRolesByUsername(String username)
     {
-        Subject subject = SecurityUtils.getSubject();
-        if (subject.isAuthenticated())
-        {
-            PrincipalCollection principals = subject.getPrincipals();
-            String username = (String) principals.getPrimaryPrincipal();
-            return tUserMapper.selectRolesByUsername(username);
-        }
-        return null;
+        return tUserMapper.selectRolesByUsername(username);
     }
 }

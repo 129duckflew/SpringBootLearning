@@ -54,6 +54,7 @@
         <module>shiro-springboot-learning</module>
         <module>jwt-springboot-demo</module>
         <module>springboot-springsecurity-jwt-demo</module>
+        <module>shiro-jwt</module>
     </modules>
     <dependencyManagement>
         <dependencies>

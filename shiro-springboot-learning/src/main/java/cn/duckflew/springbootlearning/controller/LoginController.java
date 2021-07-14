@@ -1,5 +1,6 @@
 package cn.duckflew.springbootlearning.controller;
 
+import cn.duckflew.springbootlearning.entity.RespBean;
 import cn.duckflew.springbootlearning.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +13,7 @@ public class LoginController
     @Autowired
     LoginService loginService;
     @PostMapping("/login")
-    public String login(String username,String password)
+    public RespBean login(String username, String password)
     {
         System.out.println(username);
         System.out.println(password);
@@ -21,7 +22,7 @@ public class LoginController
     @PostMapping("/logout")
     public String logout()
     {
-      return   loginService.logout();
+      return  loginService.logout();
     }
     @GetMapping("/unauth")
     public String unauth()
