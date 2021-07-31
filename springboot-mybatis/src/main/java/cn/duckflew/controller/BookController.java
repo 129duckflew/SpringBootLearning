@@ -6,12 +6,16 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.sql.DataSource;
 import java.util.List;
 
 @RestController
 @Slf4j
+@CrossOrigin
 public class BookController
 {
+    @Autowired
+    DataSource dataSource;
     @Autowired
     BookMapper bookMapper;
     @GetMapping("/books")
@@ -27,17 +31,18 @@ public class BookController
     @GetMapping("books/{id}")
     public Book getBookById(@PathVariable  int id)
     {
-        log.info(String.valueOf(id));
         return bookMapper.selectByPrimaryKey(id);
     }
-    @PutMapping("/books/")
-    public int updateById(Book book)
+    @PutMapping("/books/{id}")
+    public int updateById(@PathVariable int id,@RequestBody  Book book)
     {
         return bookMapper.updateByPrimaryKey(book);
     }
     @PostMapping("/books")
-    public int addBook(Book book)
+    public int addBook(@RequestBody Book book)
     {
-        return bookMapper.insert(book);
+        int insert = bookMapper.insert(book);
+        log.info(dataSource.toString());
+        return insert;
     }
 }

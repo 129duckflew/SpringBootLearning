@@ -21,6 +21,8 @@
         <mybatis-plus-boot-starter-version>3.3.0</mybatis-plus-boot-starter-version>
         <java.version>1.8</java.version>
         <jjwt.version>0.9.0</jjwt.version>
+        <sockjs.version>1.1.2</sockjs.version>
+        <stomp.websocket.version>2.3.3</stomp.websocket.version>
         <junit-version>4.8.2</junit-version>
         <org.springframework-version>2.5.2</org.springframework-version>
         <shiro-boot-starter.version>1.7.1</shiro-boot-starter.version>
@@ -42,6 +44,7 @@
         <auth0.version>3.15.0</auth0.version>
         <jeecg.version>1.0.2</jeecg.version>
         <commons.pool2.version>2.9.0</commons.pool2.version>
+        <shiro-web-boot-starter.version>1.4.0</shiro-web-boot-starter.version>
     </properties>
     <modules>
         <module>spring-data-jpa-learning</module>
@@ -55,6 +58,7 @@
         <module>jwt-springboot-demo</module>
         <module>springboot-springsecurity-jwt-demo</module>
         <module>shiro-jwt</module>
+        <module>simple-websocket</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -202,6 +206,26 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${spring.fox.swagger2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>sockjs-client</artifactId>
+                <version>${sockjs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>stomp-websocket</artifactId>
+                <version>${stomp.websocket.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring-boot-web-starter</artifactId>
+                <version>${shiro-web-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -1,0 +1,86 @@
+2021-07-29 05:38:04.772  INFO 9484 --- [main] cn.ducklfew.simpleWebSoket.Application   : Starting Application on DESKTOP-SUNKD56 with PID 9484 (F:\mycode\javaproject\SpringBoot\simple-websocket\target\classes started by duckflew in F:\mycode\javaproject\SpringBoot)
+2021-07-29 05:38:04.781  INFO 9484 --- [main] cn.ducklfew.simpleWebSoket.Application   : No active profile set, falling back to default profiles: default
+2021-07-29 05:38:05.573  WARN 9484 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[cn.ducklfew.simpleWebSoket]' package. Please check your configuration.
+2021-07-29 05:38:05.938  INFO 9484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-29 05:38:05.948  INFO 9484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-29 05:38:05.948  INFO 9484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-07-29 05:38:06.058  INFO 9484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-29 05:38:06.058  INFO 9484 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1216 ms
+2021-07-29 05:38:06.258  INFO 9484 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-29 05:38:07.416  INFO 9484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-29 05:38:07.424  INFO 9484 --- [main] cn.ducklfew.simpleWebSoket.Application   : Started Application in 3.064 seconds (JVM running for 3.966)
+2021-07-29 20:42:24.780  INFO 19152 --- [main] cn.ducklfew.simpleWebSoket.Application   : Starting Application on DESKTOP-SUNKD56 with PID 19152 (F:\mycode\javaproject\SpringBoot\simple-websocket\target\classes started by duckflew in F:\mycode\javaproject\SpringBoot)
+2021-07-29 20:42:24.801  INFO 19152 --- [main] cn.ducklfew.simpleWebSoket.Application   : No active profile set, falling back to default profiles: default
+2021-07-29 20:42:25.498  WARN 19152 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[cn.ducklfew.simpleWebSoket]' package. Please check your configuration.
+2021-07-29 20:42:25.872  INFO 19152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-29 20:42:25.885  INFO 19152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-29 20:42:25.885  INFO 19152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-07-29 20:42:26.030  INFO 19152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-29 20:42:26.033  INFO 19152 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1193 ms
+2021-07-29 20:42:26.232  INFO 19152 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-29 20:42:27.307  INFO 19152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-29 20:42:27.320  INFO 19152 --- [main] cn.ducklfew.simpleWebSoket.Application   : Started Application in 3.06 seconds (JVM running for 4.176)
+2021-07-29 20:43:22.685  INFO 19152 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-29 20:43:22.685  INFO 19152 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-29 20:43:22.690  INFO 19152 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-07-29 21:19:37.809  INFO 30828 --- [main] cn.ducklfew.simpleWebSoket.Application   : Starting Application on DESKTOP-SUNKD56 with PID 30828 (F:\mycode\javaproject\SpringBoot\simple-websocket\target\classes started by duckflew in F:\mycode\javaproject\SpringBoot)
+2021-07-29 21:19:37.813  INFO 30828 --- [main] cn.ducklfew.simpleWebSoket.Application   : No active profile set, falling back to default profiles: default
+2021-07-29 21:19:38.473  WARN 30828 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[cn.ducklfew.simpleWebSoket]' package. Please check your configuration.
+2021-07-29 21:19:38.721  INFO 30828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-29 21:19:38.728  INFO 30828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-29 21:19:38.728  INFO 30828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-07-29 21:19:38.802  INFO 30828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-29 21:19:38.802  INFO 30828 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 951 ms
+2021-07-29 21:19:38.911  INFO 30828 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-29 21:19:39.932  INFO 30828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-29 21:19:39.939  INFO 30828 --- [main] cn.ducklfew.simpleWebSoket.Application   : Started Application in 2.493 seconds (JVM running for 3.353)
+2021-07-29 21:19:49.566  INFO 30828 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-29 21:19:49.566  INFO 30828 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-29 21:19:49.571  INFO 30828 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-07-29 21:19:52.012  INFO 30828 --- [http-nio-8888-exec-5] c.d.s.config.WebSocketEndpoint           : undefined
+2021-07-29 21:20:43.011  INFO 30828 --- [http-nio-8888-exec-2] c.d.s.config.WebSocketEndpoint           : test
+2021-07-29 21:20:48.738  INFO 30828 --- [http-nio-8888-exec-8] c.d.s.config.WebSocketEndpoint           : test
+2021-07-29 21:21:20.805  INFO 30828 --- [http-nio-8888-exec-9] c.d.s.config.WebSocketEndpoint           : kldjasld
+2021-07-29 21:21:35.628  INFO 1236 --- [main] cn.ducklfew.simpleWebSoket.Application   : Starting Application on DESKTOP-SUNKD56 with PID 1236 (F:\mycode\javaproject\SpringBoot\simple-websocket\target\classes started by duckflew in F:\mycode\javaproject\SpringBoot)
+2021-07-29 21:21:35.632  INFO 1236 --- [main] cn.ducklfew.simpleWebSoket.Application   : No active profile set, falling back to default profiles: default
+2021-07-29 21:21:36.288  WARN 1236 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[cn.ducklfew.simpleWebSoket]' package. Please check your configuration.
+2021-07-29 21:21:36.591  INFO 1236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-29 21:21:36.598  INFO 1236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-29 21:21:36.598  INFO 1236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-07-29 21:21:36.678  INFO 1236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-29 21:21:36.678  INFO 1236 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1014 ms
+2021-07-29 21:21:36.811  INFO 1236 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-29 21:21:37.858  INFO 1236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-29 21:21:37.877  INFO 1236 --- [main] cn.ducklfew.simpleWebSoket.Application   : Started Application in 2.537 seconds (JVM running for 3.375)
+2021-07-29 21:21:42.642  INFO 1236 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-29 21:21:42.643  INFO 1236 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-29 21:21:42.648  INFO 1236 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-07-29 21:21:42.678  INFO 1236 --- [http-nio-8888-exec-1] c.d.s.config.WebSocketEndpoint           : userId:kldjasld
+2021-07-29 21:23:27.631  INFO 8172 --- [main] cn.ducklfew.simpleWebSoket.Application   : Starting Application on DESKTOP-SUNKD56 with PID 8172 (F:\mycode\javaproject\SpringBoot\simple-websocket\target\classes started by duckflew in F:\mycode\javaproject\SpringBoot)
+2021-07-29 21:23:27.636  INFO 8172 --- [main] cn.ducklfew.simpleWebSoket.Application   : No active profile set, falling back to default profiles: default
+2021-07-29 21:23:28.346  WARN 8172 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[cn.ducklfew.simpleWebSoket]' package. Please check your configuration.
+2021-07-29 21:23:28.617  INFO 8172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-29 21:23:28.623  INFO 8172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-29 21:23:28.623  INFO 8172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-07-29 21:23:28.701  INFO 8172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-29 21:23:28.702  INFO 8172 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1021 ms
+2021-07-29 21:23:28.824  INFO 8172 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-29 21:23:29.866  INFO 8172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-29 21:23:29.874  INFO 8172 --- [main] cn.ducklfew.simpleWebSoket.Application   : Started Application in 2.692 seconds (JVM running for 3.601)
+2021-07-29 21:23:34.562  INFO 8172 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-29 21:23:34.562  INFO 8172 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-29 21:23:34.572  INFO 8172 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-07-29 21:26:39.720  INFO 28088 --- [main] cn.ducklfew.simpleWebSoket.Application   : Starting Application on DESKTOP-SUNKD56 with PID 28088 (F:\mycode\javaproject\SpringBoot\simple-websocket\target\classes started by duckflew in F:\mycode\javaproject\SpringBoot)
+2021-07-29 21:26:39.733  INFO 28088 --- [main] cn.ducklfew.simpleWebSoket.Application   : No active profile set, falling back to default profiles: default
+2021-07-29 21:26:40.438  WARN 28088 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[cn.ducklfew.simpleWebSoket]' package. Please check your configuration.
+2021-07-29 21:26:40.773  INFO 28088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-29 21:26:40.782  INFO 28088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-29 21:26:40.783  INFO 28088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-07-29 21:26:40.878  INFO 28088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-29 21:26:40.879  INFO 28088 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1060 ms
+2021-07-29 21:26:41.036  INFO 28088 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-29 21:26:42.283  INFO 28088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-29 21:26:42.295  INFO 28088 --- [main] cn.ducklfew.simpleWebSoket.Application   : Started Application in 3.345 seconds (JVM running for 4.636)
+2021-07-29 21:26:48.873  INFO 28088 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-29 21:26:48.874  INFO 28088 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-29 21:26:48.881  INFO 28088 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms

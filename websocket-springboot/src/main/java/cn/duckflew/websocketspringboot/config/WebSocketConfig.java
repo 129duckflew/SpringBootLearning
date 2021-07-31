@@ -1,25 +1,26 @@
 package cn.duckflew.websocketspringboot.config;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.socket.WebSocketHandler;
-import org.springframework.web.socket.config.annotation.EnableWebSocket;
-import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
-import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry;
+import org.springframework.messaging.simp.config.MessageBrokerRegistry;
+import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
+import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
+import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
 
 @Configuration
-@EnableWebSocket
-public class WebSocketConfig  implements WebSocketConfigurer
+@EnableWebSocketMessageBroker
+public class WebSocketConfig  implements WebSocketMessageBrokerConfigurer
 {
+    @Override
+    public void configureMessageBroker(MessageBrokerRegistry config)
+    {
+        config.enableSimpleBroker("/queue","/topic");
+    }
 
     @Override
-    public void registerWebSocketHandlers(WebSocketHandlerRegistry registry)
+    public void registerStompEndpoints(StompEndpointRegistry registry)
     {
-        registry.addHandler(WsHandler(),"/api/websocket");
+        registry.addEndpoint("/customerService").withSockJS();
+        registry.addEndpoint("/customer").withSockJS();
     }
-    @Bean
-    public WebSocketHandler WsHandler()
-    {
-        return new WSHandler();
-    }
+
 }

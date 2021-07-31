@@ -1,0 +1,6 @@
+spring:
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/
+shiro:
+  loginUrl: /login
