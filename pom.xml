@@ -60,6 +60,7 @@
         <module>shiro-jwt</module>
         <module>simple-websocket</module>
         <module>springboot-swagger2</module>
+        <module>springboot-redis-cache</module>
     </modules>
     <dependencyManagement>
         <dependencies>
