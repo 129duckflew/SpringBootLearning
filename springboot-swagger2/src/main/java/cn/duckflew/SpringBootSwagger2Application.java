@@ -6,11 +6,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-public class SpringBootMybatisApplication
+public class SpringBootSwagger2Application
 {
     public static void main(String[] args)
     {
-        SpringApplication.run(SpringBootMybatisApplication.class,args);
+        SpringApplication.run(SpringBootSwagger2Application.class,args);
     }
 
 }
