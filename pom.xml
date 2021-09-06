@@ -47,20 +47,22 @@
         <shiro-web-boot-starter.version>1.4.0</shiro-web-boot-starter.version>
     </properties>
     <modules>
-        <module>spring-data-jpa-learning</module>
-        <module>springboot-learning</module>
-        <module>amqp-learning</module>
-        <module>springsecurity-learning</module>
-        <module>jwt-learning</module>
-        <module>springboot-mybatis</module>
-        <module>shiro-learning</module>
-        <module>shiro-springboot-learning</module>
-        <module>jwt-springboot-demo</module>
-        <module>springboot-springsecurity-jwt-demo</module>
-        <module>shiro-jwt</module>
-        <module>simple-websocket</module>
-        <module>springboot-swagger2</module>
-        <module>springboot-redis-cache</module>
+        <module>amqplearning</module>
+        <module>JwtSpringBootDemo</module>
+        <module>JwtSpringBootDemo1</module>
+        <module>JwtSpringSecurityDemo</module>
+        <module>MailLearning</module>
+        <module>SpringDataJpa</module>
+        <module>ShiroLearning</module>
+        <module>SpringBootMybatis</module>
+        <module>SpringBootLearning</module>
+        <module>SpringBootSwagger2</module>
+        <module>ShiroSpringBootLearning</module>
+        <module>SpringBootRedisCache</module>
+        <module>SpringSecurityLearning</module>
+        <module>SpringSecurityLearning1</module>
+        <module>WebSocketSimpleDemo</module>
+        <module>WebSocketSpringBoot</module>
     </modules>
     <dependencyManagement>
         <dependencies>
