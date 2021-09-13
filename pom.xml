@@ -63,6 +63,7 @@
         <module>SpringSecurityLearning1</module>
         <module>WebSocketSimpleDemo</module>
         <module>WebSocketSpringBoot</module>
+        <module>springbootwarpackage</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -81,11 +82,14 @@
                 <artifactId>shiro-spring-boot-starter</artifactId>
                 <version>${shiro-boot-starter.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.apache.shiro</groupId>
                 <artifactId>shiro-ehcache</artifactId>
                 <version>${shiro-boot-starter.version}</version>
             </dependency>
+
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
