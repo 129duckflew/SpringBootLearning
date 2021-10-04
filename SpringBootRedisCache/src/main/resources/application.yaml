@@ -1,11 +1,13 @@
 server:
-  port: 8888
+  port: 8080
 spring:
+  cache:
+    type: redis
   redis:
     database: 0
-    host: duckflew.cn
+    host: localhost
     port: 6379
-    password: znzedushangzhe
+    password: 123456
     lettuce:
       pool:
         max-active: 8
@@ -16,7 +18,7 @@ spring:
     username: root
     password: znzedushangzhe
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://duckflew.cn:3306/testdb?serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/testdb?serverTimezone=Asia/Shanghai
     type: com.alibaba.druid.pool.DruidDataSource
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     filters: stat,wall,log4j

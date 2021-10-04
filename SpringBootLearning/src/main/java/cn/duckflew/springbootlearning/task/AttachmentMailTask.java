@@ -1,6 +1,6 @@
 package cn.duckflew.springbootlearning.task;
 
-import cn.duckflew.springbootlearning.service.MailService;
+import cn.duckflew.service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
