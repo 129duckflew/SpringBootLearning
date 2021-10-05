@@ -4,7 +4,7 @@ logging:
   level:
     cn.duckflew: info
   file:
-    path: ./springboot-mybatis/log
+    path: ./SpringBootAop/log
 
 
 ##连接池的配置信息
