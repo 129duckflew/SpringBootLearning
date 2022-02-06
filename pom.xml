@@ -47,24 +47,28 @@
         <shiro-web-boot-starter.version>1.4.0</shiro-web-boot-starter.version>
     </properties>
     <modules>
-        <module>amqplearning</module>
-        <module>JwtSpringBootDemo</module>
-        <module>JwtSpringBootDemo1</module>
-        <module>JwtSpringSecurityDemo</module>
-        <module>MailLearning</module>
+        <module>activiti</module>
+        <module>activi-basic</module>
+        <module>rabbitmq-learning</module>
+        <module>springboot-jwt-demo</module>
+        <module>springboot-springsecurity-jwt-demo</module>
+        <module>mail-learning</module>
         <module>SpringDataJpa</module>
-        <module>ShiroLearning</module>
-        <module>SpringBootMybatis</module>
+        <module>shiro-learning</module>
+        <module>springboot-mybatis</module>
         <module>SpringBootLearning</module>
-        <module>SpringBootSwagger2</module>
-        <module>ShiroSpringBootLearning</module>
-        <module>SpringBootRedisCache</module>
+        <module>springboot-swagger2</module>
+        <module>springboot-shiro-learning</module>
+        <module>springboot-redis-cache</module>
         <module>SpringSecurityLearning</module>
         <module>SpringSecurityLearning1</module>
-        <module>WebSocketSimpleDemo</module>
-        <module>WebSocketSpringBoot</module>
+        <module>simple-websocket</module>
+        <module>springboot-websocket</module>
         <module>springbootwarpackage</module>
         <module>springbootaop</module>
+        <module>smart-doc</module>
+        <module>springboot-rabbitmq</module>
+
     </modules>
     <dependencyManagement>
         <dependencies>
