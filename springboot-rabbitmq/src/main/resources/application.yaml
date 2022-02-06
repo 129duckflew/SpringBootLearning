@@ -1,0 +1,7 @@
+spring:
+  rabbitmq:
+    host: xuniji
+    virtual-host: /mall
+    username: duckflew
+    password: 123456
+    port: 5672
