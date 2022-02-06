@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="smart-doc"><title>smart-doc</title><link rel="stylesheet" href="font.css"><link rel="stylesheet" href="AllInOne.css?v=1633771239949"/><style>.literalblock pre, .listingblock pre:not(.highlight), .listingblock pre[class="highlight"], .listingblock pre[class^="highlight "], .listingblock pre.CodeRay, .listingblock pre.prettyprint {        background: #f7f7f8    }    .hljs {        padding: 0    }</style><script src="highlight.min.js"></script><script src="jquery.min.js"></script></head><body class="book toc2 toc-left"><div id="header"><h1>smart-doc</h1><div id="toc" class="toc2"><div id="book-search-input"><input id="search" type="text" placeholder="Type to search"></div><div id="toctitle"><span>API Reference</span></div><ul id="accordion" class="sectlevel1"><li class="open"><a class="dd" href="#_"> 1.&nbsp;</a><ul class="sectlevel2"><li><a href="#_1_1_添加用户"> 1.1.&nbsp;添加用户</a></li></ul></li></ul></div></div><div id="content"><div id="preamble"><div class="sectionbody"><table class="tableblock frame-all grid-all spread"><colgroup><col style="width: 20%;"><col style="width: 20%;"><col style="width: 20%;"><col style="width: 20%;"><col style="width: 20%;"></colgroup><thead><tr><th class="tableblock halign-left valign-top">Version</th><th class="tableblock halign-left valign-top">Update Time</th><th class="tableblock halign-left valign-top">Status</th><th class="tableblock halign-left valign-top">Author</th><th class="tableblock halign-left valign-top">Description</th></tr></thead><tbody><tr><td class="tableblock halign-left valign-top"><p class="tableblock"> v2021-10-09 17:20:39</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> 2021-10-09 17:20:39</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> auto</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> @Administrator</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> Created by smart-doc</p></td></tr></tbody></table></div></div><div class="sect1"><h2 id="_"><a class="anchor" href="#_"></a><a class="link" href="#_"> 1.&nbsp;</a></h2><div class="sectionbody"><div class="sect2" id="d5fba28aa3497f1147876af254349067"><h3 id="_1_1_添加用户"><a class="anchor" href="#_1_1_添加用户"></a><a                    class="link" href="#_1_1_添加用户">1.1.&nbsp;添加用户</a></h3><div class="paragraph" id="d5fba28aa3497f1147876af254349067-url" data-url="http://127.0.0.1/user/add" data-download="false" data-page=""><p><strong>URL:</strong><a href="http://127.0.0.1/user/add" class="bare">&nbsp;http://127.0.0.1/user/add</a></p></div><div class="paragraph" id="d5fba28aa3497f1147876af254349067-method" data-method="POST"><p><strong>Type:</strong>&nbsp;POST</p></div><div class="paragraph" id="d5fba28aa3497f1147876af254349067-content-type" data-content-type="application/json; charset=utf-8"><p><strong>Content-Type:</strong>&nbsp;application/json; charset=utf-8</p></div><div class="paragraph"><p><strong>Description:</strong> &nbsp;添加用户</p></div><div class="paragraph"><p><strong>Body-parameters:</strong></p></div><table class="tableblock frame-all grid-all spread"><colgroup><col style="width: 20%;"><col style="width: 20%;"><col style="width: 20%;"><col style="width: 20%;"><col style="width: 20%;"></colgroup><thead><tr><th class="tableblock halign-left valign-top">Parameter</th><th class="tableblock halign-left valign-top">Type</th><th class="tableblock halign-left valign-top">Description</th><th class="tableblock halign-left valign-top">Required</th><th class="tableblock halign-left valign-top">Since</th></tr></thead><tbody><tr><td class="tableblock halign-left valign-top"><p class="tableblock"> username</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> string</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">用户名</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> false</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> -</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock"> password</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> string</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">密码</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> false</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> -</p></td></tr></tbody></table><div class="paragraph"><p><strong>Request-example:</strong></p></div><div class="listingblock"><div class="content"><pre><code class="bash">curl -X POST -H 'Content-Type: application/json; charset=utf-8' -i http://127.0.0.1/user/add --data '{
+  "username": "cherrie.jacobs",
+  "password": "jkacn6"
+}'</code></pre></div></div><div class="paragraph"><p><strong>Response-fields:</strong></p></div><table class="tableblock frame-all grid-all spread"><colgroup><col style="width: 25%;"><col style="width: 25%;"><col style="width: 25%;"><col style="width: 25%;"></colgroup><thead><tr><th class="tableblock halign-left valign-top">Field</th><th class="tableblock halign-left valign-top">Type</th><th class="tableblock halign-left valign-top">Description</th><th class="tableblock halign-left valign-top">Since</th></tr></thead><tbody><tr><td class="tableblock halign-left valign-top"><p class="tableblock"> username</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> string</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">用户名</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> -</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock"> password</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> string</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">密码</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> -</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock"> roles</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> array</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">权限</p></td><td class="tableblock halign-left valign-top"><p class="tableblock"> -</p></td></tr></tbody></table><div class="paragraph"><p><strong>Response-example:</strong></p></div><div class="listingblock"><div class="content"><pre><code class="json">{
+  "username": "cherrie.jacobs",
+  "password": "n2s722",
+  "roles": [
+    "1z6jzi"
+  ]
+}</code></pre></div></div></div></div></div><footer class="page-footer"><span class="copyright">Generated by smart-doc at 2021-10-09 17:20:39</span><span            class="footer-modification">Suggestions,contact,support and error reporting on<a href="https://gitee.com/smart-doc-team/smart-doc" target="_blank">&nbsp;Gitee</a>&nbsp;or<ahref="https://github.com/smart-doc-group/smart-doc.git" target="_blank">&nbsp;Github</a></span></footer><div href="javascript:void(0)" id="toTop"><img id="upArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABlUlEQVRIS+2UvUvDQBiH398Rly4udnARwUXs4qAIOigI4iL30dTZ2T9AcNPVvUsXF7uYttdScNDFRRAnB11cFFwKxcXBJTQnJ6lEbRI/CIiY9e6e5/e+9+ZAGX/ImE9/QKCU2jfGbGTQqq4xZgtSyisiKmQgIAAVCCFWAGxnIOhqrdd/xyUrpRZsP40xSwA6AI57vd5eq9W6T6s8tQIppSKi+gDQNREprfVNkiRRwDlfY4xZ+FAIuSOi8Qjw0nEc5XnebZwkViClXA2T5+xhY8xus9ncEUJMAziITN5FEARuXLsGCoQQywBs8uEovJ+Scz7FGDuMSM4cx3E9z+u8r+SDQEq5SEQ1IhoZBE+QnBKRq7V+iEreCDjn84wxCx9NgidITnK5nFutVh/7e14FSqnZIAhqAMY+A4+TADjyfb/Ubref7J4XQXhxNvnEV+AJlbTy+XypUqn4KBaLBZuciCa/A0+opN5oNFz7FpUBbP4EHicxxsyAcz7HGDvvz3nar5+2Ho5wOQwsU5+KNGDa+r8grUP0DBLjtRtNKEliAAAAAElFTkSuQmCC"><span id="upText">Top</span></div></div>
+<script src="search.js?v=1633771239949"></script>
+<script>$(function () {
+    const Accordion = function (el, multiple) {
+        this.el = el || {};
+        this.multiple = multiple || false;
+        const links = this.el.find(".dd");
+        links.on("click", {el: this.el, multiple: this.multiple}, this.dropdown)
+    };
+    Accordion.prototype.dropdown = function (e) {
+        const $el = e.data.el;
+        const $this = $(this), $next = $this.next();
+        $next.slideToggle();
+        $this.parent().toggleClass("open");
+        if (!e.data.multiple) {
+            $el.find(".submenu").not($next).slideUp("20").parent().removeClass("open")
+        }
+    };
+    new Accordion($("#accordion"), false);
+    hljs.initHighlightingOnLoad();
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $("#toTop").fadeIn(1500);
+            $("#toTop").hover(function () {
+                $("#upArrow").hide();
+                $("#upText").show()
+            }, function () {
+                $("#upArrow").show();
+                $("#upText").hide()
+            })
+        } else {
+            $("#toTop").fadeOut(1500)
+        }
+    });
+    $("#toTop").click(function () {
+        $("body, html").animate({scrollTop: 0}, 1000);
+        return false
+    })
+});</script>
+</body>
+</html>
